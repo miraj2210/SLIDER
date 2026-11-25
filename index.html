@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="slider">
+
+        <div class="slides">
+            <img src="https://picsum.photos/id/1018/1200/500" class="slide active">
+            <img src="https://picsum.photos/id/1015/1200/500" class="slide">
+            <img src="https://picsum.photos/id/1019/1200/500" class="slide">
+            <img src="https://picsum.photos/id/1020/1200/500" class="slide">
+        </div>
+
+
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+
+
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
